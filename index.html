@@ -1,575 +1,689 @@
 <!DOCTYPE html>
-<html lang="zh-Hant">
+<html lang="zh-TW">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>為什麼我主張植牙要與自然牙相連比較好？</title>
-  <meta name="description" content="以新聞稿圖文編排方式說明植牙與自然牙相連的咬合、生理與臨床邏輯。">
-  <meta property="og:title" content="為什麼我主張植牙要與自然牙相連比較好？">
-  <meta property="og:description" content="一篇關於混合支持修復設計的專題式圖文頁。">
-  <meta property="og:type" content="website">
-  <meta property="og:image" content="assets/case-p01.jpg">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='8' fill='%23241615'/%3E%3Cpath d='M14 39h36' stroke='%23b88a44' stroke-width='6' stroke-linecap='round'/%3E%3Ccircle cx='20' cy='34' r='10' fill='%23fff5df'/%3E%3Ccircle cx='44' cy='34' r='10' fill='%23fff5df'/%3E%3C/svg%3E">
+  <title>為什麼植牙要與自然牙相連？｜Masky 醫師</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@600;700;900&family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@300;400;500;700;900&family=Noto+Sans+TC:wght@300;400;700&display=swap" rel="stylesheet">
   <style>
-    :root {
-      --ink: #241615;
-      --paper: #f8f1e4;
-      --sheet: #fffaf0;
-      --line: rgba(36, 22, 21, .18);
-      --muted: #76685b;
-      --wine: #7c1f25;
-      --wine-dark: #421014;
-      --gold: #b88a44;
-      --olive: #505642;
-      --caption: #5f554d;
-      --shadow: 0 22px 54px rgba(36, 22, 21, .14);
-    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-    * { box-sizing: border-box; }
+    :root {
+      --navy:   #0d1b2a;
+      --navy2:  #152539;
+      --ink:    #1a2a3a;
+      --teal:   #1a6b8a;
+      --teal2:  #0e4d65;
+      --gold:   #c9a84c;
+      --gold2:  #a07830;
+      --cream:  #f5f0e8;
+      --lgray:  #8090a0;
+      --white:  #ffffff;
+    }
 
     html { scroll-behavior: smooth; }
 
     body {
-      margin: 0;
-      color: var(--ink);
-      background:
-        linear-gradient(90deg, rgba(36, 22, 21, .05) 1px, transparent 1px),
-        linear-gradient(180deg, #fbf5e9 0%, var(--paper) 100%);
-      background-size: 76px 100%, auto;
-      font-family: "Noto Sans TC", system-ui, sans-serif;
+      font-family: 'Noto Serif TC', serif;
+      background: var(--navy);
+      color: #d8e8f0;
+      line-height: 1.9;
+      font-size: 16px;
     }
 
-    a { color: inherit; }
+    img { display: block; width: 100%; height: auto; }
 
+    /* ─── MASTHEAD ─────────────────────────── */
     .masthead {
-      border-bottom: 3px solid var(--ink);
-      background: var(--sheet);
-    }
-
-    .masthead-inner {
-      width: min(1180px, calc(100% - 36px));
-      margin: 0 auto;
-      display: grid;
-      grid-template-columns: 1fr auto;
-      gap: 20px;
-      align-items: center;
-      padding: 18px 0 14px;
-    }
-
-    .brand {
-      font-family: "Noto Serif TC", serif;
-      font-size: clamp(24px, 4vw, 42px);
-      font-weight: 900;
-      letter-spacing: 0;
-    }
-
-    .issue {
-      color: var(--muted);
-      font-size: 12px;
-      font-weight: 900;
-      letter-spacing: 1.6px;
-      text-align: right;
-      text-transform: uppercase;
-    }
-
-    .ticker {
-      border-bottom: 1px solid var(--line);
-      background: #ede1cf;
-      color: var(--wine-dark);
-      font-size: 13px;
-      font-weight: 900;
-      letter-spacing: .8px;
-    }
-
-    .ticker div {
-      width: min(1180px, calc(100% - 36px));
-      margin: 0 auto;
-      padding: 10px 0;
-    }
-
-    .page {
-      width: min(1180px, calc(100% - 36px));
-      margin: 0 auto;
-    }
-
-    .hero {
-      display: grid;
-      grid-template-columns: minmax(0, .92fr) minmax(360px, 1.08fr);
-      gap: clamp(24px, 4vw, 54px);
-      padding: clamp(34px, 6vw, 78px) 0 34px;
-      align-items: end;
-      border-bottom: 1px solid var(--line);
-    }
-
-    .section-label {
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
-      color: var(--wine);
-      font-size: 12px;
-      font-weight: 900;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      margin-bottom: 18px;
-    }
-
-    .section-label::before {
-      content: "";
-      width: 38px;
-      height: 3px;
-      background: var(--gold);
-    }
-
-    h1 {
-      margin: 0;
-      font-family: "Noto Serif TC", serif;
-      font-size: clamp(44px, 7.4vw, 92px);
-      line-height: 1.04;
-      font-weight: 900;
-      letter-spacing: 0;
-    }
-
-    .dek {
-      margin: 22px 0 0;
-      color: #41342f;
-      font-size: clamp(18px, 2vw, 23px);
-      line-height: 1.85;
-      font-weight: 700;
-      border-left: 6px solid var(--wine);
-      padding-left: 18px;
-    }
-
-    .byline {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px 18px;
-      margin-top: 22px;
-      color: var(--muted);
-      font-size: 13px;
-      font-weight: 800;
-    }
-
-    .hero-media {
-      background: #211513;
-      border: 1px solid rgba(36, 22, 21, .28);
-      box-shadow: var(--shadow);
-    }
-
-    .hero-media img {
-      width: 100%;
-      display: block;
-      aspect-ratio: 16 / 10;
-      object-fit: cover;
-    }
-
-    figcaption {
-      margin: 0;
-      padding: 12px 14px 14px;
-      color: #ede1cf;
-      background: #211513;
-      font-size: 13px;
-      line-height: 1.6;
-    }
-
-    .article-grid {
-      display: grid;
-      grid-template-columns: minmax(0, 1fr) 310px;
-      gap: clamp(28px, 5vw, 64px);
-      padding: 44px 0 70px;
-      align-items: start;
-    }
-
-    .article {
-      max-width: 760px;
-    }
-
-    .article p {
-      margin: 0 0 24px;
-      color: #352a27;
-      font-size: 18px;
-      line-height: 2.05;
-    }
-
-    .article p:first-of-type::first-letter {
-      float: left;
-      padding: 11px 10px 0 0;
-      color: var(--wine);
-      font-family: "Noto Serif TC", serif;
-      font-size: 74px;
-      line-height: .72;
-      font-weight: 900;
-    }
-
-    h2 {
-      margin: 42px 0 14px;
-      font-family: "Noto Serif TC", serif;
-      font-size: clamp(28px, 4vw, 44px);
-      line-height: 1.22;
-      font-weight: 900;
-    }
-
-    .pullquote {
-      margin: 34px 0;
-      padding: 26px 28px;
-      color: #fff8ea;
-      background: var(--wine-dark);
-      border-top: 5px solid var(--gold);
-      font-family: "Noto Serif TC", serif;
-      font-size: clamp(25px, 3.4vw, 40px);
-      line-height: 1.55;
-      font-weight: 900;
-    }
-
-    .aside {
-      position: sticky;
-      top: 22px;
-      display: grid;
-      gap: 18px;
-    }
-
-    .note-card {
-      border-top: 5px solid var(--wine);
-      background: var(--sheet);
-      box-shadow: var(--shadow);
-      padding: 20px;
-    }
-
-    .note-card h3 {
-      margin: 0 0 12px;
-      font-size: 18px;
-    }
-
-    .note-card ul {
-      margin: 0;
-      padding: 0;
-      list-style: none;
-      display: grid;
-      gap: 12px;
-    }
-
-    .note-card li {
-      color: #473a34;
-      line-height: 1.7;
-      border-bottom: 1px solid var(--line);
-      padding-bottom: 12px;
-    }
-
-    .note-card li:last-child {
-      border-bottom: 0;
-      padding-bottom: 0;
-    }
-
-    .data-strip {
-      display: grid;
-      gap: 10px;
-      padding: 18px;
-      color: #fff7e8;
-      background: var(--ink);
-    }
-
-    .data-strip b {
-      color: var(--gold);
-      font-size: 28px;
-      line-height: 1;
-    }
-
-    .data-strip span {
-      color: rgba(255, 247, 232, .76);
-      font-size: 13px;
-      line-height: 1.6;
-    }
-
-    .image-break {
-      margin: 34px 0;
-      border: 1px solid var(--line);
-      background: var(--sheet);
-    }
-
-    .image-break img {
-      width: 100%;
-      display: block;
-    }
-
-    .image-break figcaption {
-      color: var(--caption);
-      background: var(--sheet);
-      border-top: 1px solid var(--line);
-    }
-
-    .evidence-band {
-      background: #211513;
-      color: #fff8ea;
-      padding: clamp(52px, 7vw, 84px) 0;
-    }
-
-    .evidence-head {
-      display: grid;
-      grid-template-columns: 1fr minmax(260px, 420px);
-      gap: 24px;
-      align-items: end;
-      margin-bottom: 26px;
-    }
-
-    .evidence-head h2 {
-      margin: 0;
-      color: #fff8ea;
-    }
-
-    .evidence-head p {
-      margin: 0;
-      color: rgba(255, 248, 234, .72);
-      line-height: 1.85;
-    }
-
-    .photo-grid {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 14px;
-    }
-
-    .photo-card {
-      display: block;
-      overflow: hidden;
-      color: #fff8ea;
-      background: #36211d;
-      border: 1px solid rgba(255, 248, 234, .16);
-      text-decoration: none;
-    }
-
-    .photo-card img {
-      width: 100%;
-      display: block;
-      aspect-ratio: 16 / 10;
-      object-fit: cover;
-      filter: saturate(.9) contrast(1.04);
-      transition: transform .22s ease;
-    }
-
-    .photo-card:hover img {
-      transform: scale(1.035);
-    }
-
-    .photo-card span {
-      display: block;
-      padding: 10px 12px 12px;
-      color: rgba(255, 248, 234, .72);
-      font-size: 12px;
-      font-weight: 900;
-      letter-spacing: 1.2px;
-    }
-
-    .closing {
-      padding: clamp(52px, 7vw, 84px) 0;
-      display: grid;
-      grid-template-columns: .9fr 1.1fr;
-      gap: clamp(24px, 5vw, 64px);
-      align-items: center;
-    }
-
-    .closing h2 {
-      margin-top: 0;
-    }
-
-    .checks {
-      margin: 0;
-      padding: 0;
-      list-style: none;
-      display: grid;
-      gap: 12px;
-    }
-
-    .checks li {
-      padding: 14px 16px;
-      background: var(--sheet);
-      border-left: 5px solid var(--gold);
-      box-shadow: 0 10px 28px rgba(36, 22, 21, .08);
-      color: #40322f;
-      line-height: 1.75;
-    }
-
-    footer {
-      border-top: 3px solid var(--ink);
-      padding: 24px 18px 34px;
-      color: var(--muted);
-      background: var(--sheet);
+      background: linear-gradient(135deg, #060e18 0%, #0d1b2a 60%, #0a2030 100%);
       text-align: center;
-      font-size: 13px;
+      padding: 48px 24px 36px;
+      border-bottom: 3px solid var(--gold);
+      position: relative; overflow: hidden;
+    }
+    .masthead::before {
+      content: '';
+      position: absolute; inset: 0;
+      background: radial-gradient(ellipse at 50% -10%, rgba(26,107,138,.3) 0%, transparent 60%);
+      pointer-events: none;
+    }
+    .masthead-eyebrow {
+      font-family: 'Noto Sans TC', sans-serif;
+      font-size: .68rem; font-weight: 700; letter-spacing: .32em;
+      color: var(--gold); text-transform: uppercase; margin-bottom: 16px;
+    }
+    .masthead-title {
+      font-size: clamp(1.8rem, 5.5vw, 4rem);
+      font-weight: 900; letter-spacing: .04em; line-height: 1.15;
+      color: #fff; margin-bottom: 18px;
+    }
+    .masthead-title em { color: var(--gold); font-style: normal; }
+    .masthead-sub {
+      font-family: 'Noto Sans TC', sans-serif;
+      font-size: clamp(.78rem, 1.6vw, .95rem);
+      color: rgba(255,255,255,.5); letter-spacing: .12em; margin-bottom: 20px;
+    }
+    .masthead-tags {
+      display: flex; justify-content: center; gap: 10px; flex-wrap: wrap;
+    }
+    .tag {
+      font-family: 'Noto Sans TC', sans-serif;
+      font-size: .65rem; font-weight: 700; letter-spacing: .14em;
+      background: rgba(201,168,76,.15); border: 1px solid rgba(201,168,76,.4);
+      color: #d4b870; padding: 4px 14px;
     }
 
-    @media (max-width: 980px) {
-      .hero,
-      .article-grid,
-      .evidence-head,
-      .closing {
-        grid-template-columns: 1fr;
-      }
+    /* ─── NAV ───────────────────────────────── */
+    .nav-bar {
+      background: #070f18; border-bottom: 1px solid #1a2a3a;
+      display: flex; overflow-x: auto;
+      position: sticky; top: 0; z-index: 100;
+    }
+    .nav-bar a {
+      font-family: 'Noto Sans TC', sans-serif;
+      font-size: .68rem; font-weight: 700; letter-spacing: .14em;
+      color: rgba(255,255,255,.4); text-decoration: none;
+      padding: 11px 16px; white-space: nowrap;
+      border-bottom: 2px solid transparent;
+      transition: color .2s, border-color .2s;
+    }
+    .nav-bar a:hover { color: var(--gold); border-bottom-color: var(--gold); }
 
-      .aside {
-        position: static;
-        grid-template-columns: repeat(2, 1fr);
-      }
+    /* ─── WRAP ──────────────────────────────── */
+    .site-wrap { max-width: 1160px; margin: 0 auto; padding: 52px 24px 80px; }
 
-      .photo-grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
+    /* ─── SECTION LABEL ─────────────────────── */
+    .section-label {
+      font-family: 'Noto Sans TC', sans-serif;
+      background: var(--teal); color: #fff;
+      font-size: .62rem; font-weight: 700; letter-spacing: .2em;
+      padding: 3px 12px; display: inline-block; margin-bottom: 12px;
+    }
+    .section-label.gold  { background: var(--gold2); }
+    .section-label.dark  { background: #1a2a3a; border: 1px solid #2a4a6a; }
+    .section-label.warn  { background: #8b2a1a; }
+
+    /* ─── HEADINGS ──────────────────────────── */
+    .hed-xl { font-size: clamp(1.7rem,4.5vw,3rem); font-weight: 900; line-height: 1.18; margin-bottom: 18px; color: #fff; }
+    .hed-lg { font-size: clamp(1.2rem,3vw,1.95rem); font-weight: 700; line-height: 1.22; margin-bottom: 14px; color: #e8f0f8; }
+    .hed-md { font-size: clamp(.95rem,2.2vw,1.4rem); font-weight: 700; line-height: 1.3; margin-bottom: 10px; color: #e0eaf4; }
+
+    .dek { font-size: .98rem; color: rgba(255,255,255,.5); line-height: 1.8; margin-bottom: 18px; font-weight: 300; }
+
+    /* ─── BODY TEXT ─────────────────────────── */
+    .body-text p { margin-bottom: 1em; color: #b8ccd8; font-size: .94rem; line-height: 2; }
+    .body-text p:first-child::first-letter {
+      font-size: 3.4em; font-weight: 900; float: left;
+      line-height: .78; margin: .06em .1em 0 0;
+      color: var(--gold);
     }
 
-    @media (max-width: 620px) {
-      .masthead-inner,
-      .ticker div,
-      .page {
-        width: min(100% - 24px, 1180px);
-      }
+    /* ─── CAPTION ───────────────────────────── */
+    .caption {
+      font-family: 'Noto Sans TC', sans-serif;
+      font-size: .68rem; color: rgba(255,255,255,.3);
+      padding: 6px 10px; border-top: 1px solid #1a2a3a;
+      background: rgba(255,255,255,.02); letter-spacing: .06em;
+    }
 
-      .masthead-inner,
-      .aside {
-        grid-template-columns: 1fr;
-      }
+    /* ─── PULL QUOTE ────────────────────────── */
+    .pull-quote {
+      border-top: 2px solid var(--gold);
+      border-bottom: 2px solid var(--gold);
+      margin: 24px 0; padding: 18px 20px;
+      font-style: italic; font-weight: 500;
+      color: #d4b870; text-align: center;
+      font-size: 1.02rem; line-height: 1.85;
+    }
+    .pull-quote.teal-q { border-color: var(--teal); color: #70c0d8; }
 
-      .issue {
-        text-align: left;
-      }
+    /* ─── DIVIDER ───────────────────────────── */
+    .divider { border: none; border-top: 1px solid #1a2a3a; margin: 48px 0; }
+    .divider-gold { border: none; border-top: 2px solid var(--gold); margin: 48px 0; }
 
-      .hero {
-        padding-top: 28px;
-      }
+    /* ─── CALLOUT BOX ───────────────────────── */
+    .callout {
+      background: rgba(26,107,138,.12); border: 1px solid rgba(26,107,138,.4);
+      border-left: 4px solid var(--teal);
+      padding: 18px 20px; margin: 16px 0;
+    }
+    .callout.gold-box {
+      background: rgba(201,168,76,.08); border: 1px solid rgba(201,168,76,.3);
+      border-left: 4px solid var(--gold);
+    }
+    .callout.warn-box {
+      background: rgba(139,42,26,.12); border: 1px solid rgba(139,42,26,.35);
+      border-left: 4px solid #c0392b;
+    }
+    .callout p { color: #b8d8e8 !important; margin-bottom: 0 !important; font-size: .9rem !important; }
+    .callout.gold-box p { color: #d4b870 !important; }
+    .callout.warn-box p { color: #e09080 !important; }
 
-      .dek {
-        font-size: 17px;
-      }
+    /* ═══════════════════════════════════════
+       LAYOUTS
+    ═══════════════════════════════════════ */
+    .hero { display: grid; grid-template-columns: 60fr 40fr; gap: 36px; align-items: start; }
+    .hero img { width: 100%; height: auto; }
 
-      .article p {
-        font-size: 16px;
-      }
+    .full-img img { width: 100%; height: auto; }
+    .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; padding-top: 28px; }
 
-      .photo-grid {
-        grid-template-columns: 1fr;
-      }
+    .alt { display: grid; grid-template-columns: 55fr 45fr; gap: 36px; align-items: start; }
+    .alt.rev { grid-template-columns: 45fr 55fr; }
+    .alt.rev .alt-img { order: 2; }
+    .alt.rev .alt-text { order: 1; }
+    .alt .alt-img img { width: 100%; height: auto; }
+
+    .three-col { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 24px; }
+    .three-col .col img { width: 100%; height: auto; }
+
+    /* QUOTE SPREAD */
+    .quote-spread {
+      background: #060e18; padding: 64px 48px; text-align: center;
+      border-top: 2px solid var(--gold); border-bottom: 2px solid var(--gold);
+      position: relative; overflow: hidden;
+    }
+    .quote-spread::before {
+      content: '';
+      position: absolute; inset: 0;
+      background: radial-gradient(ellipse at center, rgba(201,168,76,.1) 0%, transparent 65%);
+    }
+    .quote-spread blockquote {
+      position: relative; z-index: 1;
+      font-size: clamp(1rem,2.5vw,1.6rem);
+      font-weight: 400; line-height: 2.2; font-style: italic;
+      color: #e0e8f0; max-width: 760px; margin: 0 auto 20px;
+    }
+    .quote-spread cite {
+      position: relative; z-index: 1;
+      font-family: 'Noto Sans TC', sans-serif;
+      font-size: .78rem; color: rgba(255,255,255,.3);
+      letter-spacing: .2em; font-style: normal;
+    }
+
+    /* CLOSING */
+    .closing {
+      text-align: center; background: #060e18;
+      padding: 72px 40px; position: relative; overflow: hidden;
+    }
+    .closing::before {
+      content: '';
+      position: absolute; inset: 0;
+      background: radial-gradient(ellipse at 50% 40%, rgba(201,168,76,.15) 0%, transparent 65%);
+    }
+    .closing * { position: relative; z-index: 1; }
+    .closing .hed-xl { color: var(--gold); }
+    .closing .dek { color: rgba(255,255,255,.55); font-size: 1rem; line-height: 2.1; margin-top: 20px; }
+
+    /* DO/DONT TABLE */
+    .compare-table { display: grid; grid-template-columns: 1fr 1fr; gap: 0; margin-top: 16px; }
+    .compare-col { padding: 20px; }
+    .compare-col.dont { background: rgba(139,42,26,.15); border: 1px solid rgba(192,57,43,.3); }
+    .compare-col.do   { background: rgba(26,107,60,.15); border: 1px solid rgba(46,160,67,.3); }
+    .compare-label { font-family: 'Noto Sans TC', sans-serif; font-size: .72rem; font-weight: 700; letter-spacing: .2em; margin-bottom: 8px; }
+    .compare-col.dont .compare-label { color: #e09080; }
+    .compare-col.do   .compare-label { color: #80d0a0; }
+    .compare-col p { font-size: .88rem; color: #b8c8d8; line-height: 1.7; margin: 0; }
+
+    /* FOOTER */
+    footer {
+      background: #040a10; color: rgba(255,255,255,.2);
+      text-align: center; padding: 22px;
+      font-family: 'Noto Sans TC', sans-serif; font-size: .66rem; letter-spacing: .12em;
+      border-top: 1px solid #0d1a28;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 768px) {
+      .hero, .alt, .alt.rev, .two-col, .three-col, .compare-table { grid-template-columns: 1fr; }
+      .alt.rev .alt-img { order: 0; }
+      .alt.rev .alt-text { order: 0; }
+      .quote-spread { padding: 40px 20px; }
+      .closing { padding: 48px 20px; }
     }
   </style>
 </head>
 <body>
-  <header class="masthead">
-    <div class="masthead-inner">
-      <div class="brand">口腔重建觀點</div>
-      <div class="issue">Special Report · 2026</div>
-    </div>
-  </header>
 
-  <div class="ticker">
-    <div>臨床專題｜植體剛性支撐 × 自然牙牙周韌帶 × 固定修復設計</div>
+<!-- ═══ MASTHEAD ═══ -->
+<header class="masthead">
+  <div class="masthead-eyebrow">廣義咬合學 · 生物力學新思維 · Masky 醫師</div>
+  <div class="masthead-title">為什麼植牙要與<em>自然牙相連</em>比較好？</div>
+  <div class="masthead-sub">從廣義咬合學出發，對抗口腔熵增的生物力學新思維</div>
+  <div class="masthead-tags">
+    <span class="tag">廣義咬合學</span>
+    <span class="tag">力學封閉單元</span>
+    <span class="tag">動態系統</span>
+    <span class="tag">剛性連結</span>
+    <span class="tag">全口重建</span>
   </div>
+</header>
 
-  <main>
-    <section class="page hero">
+<!-- ═══ NAV ═══ -->
+<nav class="nav-bar">
+  <a href="#intro">前言</a>
+  <a href="#myth">歷史迷思</a>
+  <a href="#pdl">PDL差異</a>
+  <a href="#blindspot">古典盲點</a>
+  <a href="#upgrade">典範轉移</a>
+  <a href="#dim1">第一維度</a>
+  <a href="#dim2">第二維度</a>
+  <a href="#dim3">第三維度</a>
+  <a href="#disaster">力學失配</a>
+  <a href="#relapse">矯正復發</a>
+  <a href="#pcl">跑縫現象</a>
+  <a href="#solution">力學封閉</a>
+  <a href="#anchor">定海神針</a>
+  <a href="#advantage">加乘優勢</a>
+  <a href="#intrusion">破解恐懼</a>
+  <a href="#rigid">剛性連結</a>
+  <a href="#data">臨床實證</a>
+  <a href="#digital">數位精準</a>
+  <a href="#conclusion">總結</a>
+</nav>
+
+<!-- ═══ MAIN ═══ -->
+<main class="site-wrap">
+
+  <!-- 1. HERO -->
+  <section id="intro" style="margin-bottom:52px;">
+    <div class="hero">
       <div>
-        <div class="section-label">Press Feature</div>
-        <h1>為什麼我主張植牙要與自然牙相連比較好？</h1>
-        <p class="dek">當植體旁的自然牙本來就需要固定假牙時，治療問題不只是「能不能相連」，而是能不能把咬合、感覺、清潔與長期維修放進同一個系統來設計。</p>
-        <div class="byline">
-          <span>撰文觀點：混合支持修復設計</span>
-          <span>刊登版型：新聞稿圖文專題</span>
-        </div>
+        <img src="img/page-01.jpg" alt="為什麼植牙要與自然牙相連比較好">
+        <div class="caption">▲ 力學封閉單元（Closed Mechanical Unit）——這是Masky醫師對抗口腔熵增的核心主張。</div>
       </div>
-      <figure class="hero-media">
-        <img src="assets/case-p01.jpg" alt="植牙與自然牙相連的專題主圖">
-        <figcaption>主視覺改以靜態專題首圖呈現，頁面色系採墨黑、象牙紙、酒紅與金色，和醫療簡報照片的淺藍白視覺做出區隔。</figcaption>
-      </figure>
-    </section>
-
-    <section class="page article-grid">
-      <article class="article">
-        <p>傳統植牙觀念常強調植體不要與自然牙相連，理由是兩者動度不同。但在全口重建或多顆固定修復的情境裡，自然牙的位置、角度與對咬關係會隨時間改變；植體骨整合後卻幾乎不會移動。若完全切開處理，長期反而可能產生牙縫、咬合落差與維修負擔。</p>
-
-        <p>因此，這個主張不是把「連接」當成萬能解方，而是把治療判斷拉回更完整的問題：患者缺的不是單一牙根，而是可長期維持、可感知、可清潔、可調整的功能單位。</p>
-
-        <div class="pullquote">植體提供穩定，自然牙提供感覺；真正要重建的，是整個咬合系統。</div>
-
-        <h2>不是「植體歸植體」那麼簡單</h2>
-        <p>如果植體旁邊的自然牙完整、沒有做固定假牙的需求，植體獨立修復仍然合理。真正需要被重新討論的是另一種情況：自然牙本來就要納入牙冠或牙橋時，是否應該讓植體與自然牙共同承擔橋體設計。</p>
-
-        <figure class="image-break">
-          <img src="assets/narration-p01.jpg" alt="旁白論點整理頁">
-          <figcaption>旁白資料重點：混合修復設計能結合植體穩定性與自然牙本體感覺，但必須先評估牙周、骨質與清潔條件。</figcaption>
-        </figure>
-
-        <h2>臨床邏輯一：咬合不是靜態模型</h2>
-        <p>自然牙會受牙周韌帶、咬合力與時間影響而產生微幅位置變化；植體則因骨整合而近乎固定。兩者完全分離時，補綴物看似各自安全，長期卻可能在齒列變化中逐漸失去原本的接觸關係。</p>
-
-        <h2>臨床邏輯二：自然牙保留了感覺回饋</h2>
-        <p>自然牙能感知咬合力道與位置，這是植體缺乏的本體感覺。連接式設計若處理得當，橋體不只是靠植體的剛性支撐，也能借用自然牙的感覺與微動，讓整體修復更接近生理性的咀嚼系統。</p>
-
-        <h2>臨床邏輯三：病例選擇比禁忌更重要</h2>
-        <p>連接式修復需要嚴謹的支台評估、咬合設計、牙周控制與清潔策略。它不是每一案都適合，但若自然牙健康、牙周穩定、補綴需求明確，植牙與自然牙相連可以被視為一種系統性修復策略，而非過時妥協。</p>
-      </article>
-
-      <aside class="aside">
-        <div class="note-card">
-          <h3>重點摘要</h3>
-          <ul>
-            <li>討論前提：鄰近自然牙本來就需要固定假牙。</li>
-            <li>關鍵差異：植體近乎不動，自然牙會隨時間與咬合改變。</li>
-            <li>設計價值：把支撐、感覺、清潔與維修視為同一套系統。</li>
-            <li>臨床邊界：牙周不穩定或清潔條件差時，不應草率相連。</li>
-          </ul>
-        </div>
-        <div class="data-strip">
-          <b>4</b>
-          <span>頁面主軸：動度差異、本體感覺、全口重建、病例選擇。</span>
-          <b>20</b>
-          <span>研究圖卡已整理成可點開閱讀的刊登素材。</span>
-        </div>
-      </aside>
-    </section>
-
-    <section class="evidence-band" id="slides">
-      <div class="page">
-        <div class="evidence-head">
-          <h2>研究圖卡素材</h2>
-          <p>以下圖片保留原始簡報風格，外層版面用深色新聞專題色系包覆，讓素材照片與網頁風格有明確層次。</p>
-        </div>
-        <div class="photo-grid">
-          <a class="photo-card" href="assets/case-p01.jpg" target="_blank" rel="noreferrer"><img src="assets/case-p01.jpg" alt="研究圖卡 1"><span>SLIDE 01</span></a>
-          <a class="photo-card" href="assets/case-p02.jpg" target="_blank" rel="noreferrer"><img src="assets/case-p02.jpg" alt="研究圖卡 2"><span>SLIDE 02</span></a>
-          <a class="photo-card" href="assets/case-p03.jpg" target="_blank" rel="noreferrer"><img src="assets/case-p03.jpg" alt="研究圖卡 3"><span>SLIDE 03</span></a>
-          <a class="photo-card" href="assets/case-p04.jpg" target="_blank" rel="noreferrer"><img src="assets/case-p04.jpg" alt="研究圖卡 4"><span>SLIDE 04</span></a>
-          <a class="photo-card" href="assets/case-p05.jpg" target="_blank" rel="noreferrer"><img src="assets/case-p05.jpg" alt="研究圖卡 5"><span>SLIDE 05</span></a>
-          <a class="photo-card" href="assets/case-p06.jpg" target="_blank" rel="noreferrer"><img src="assets/case-p06.jpg" alt="研究圖卡 6"><span>SLIDE 06</span></a>
-          <a class="photo-card" href="assets/case-p07.jpg" target="_blank" rel="noreferrer"><img src="assets/case-p07.jpg" alt="研究圖卡 7"><span>SLIDE 07</span></a>
-          <a class="photo-card" href="assets/case-p08.jpg" target="_blank" rel="noreferrer"><img src="assets/case-p08.jpg" alt="研究圖卡 8"><span>SLIDE 08</span></a>
-          <a class="photo-card" href="assets/case-p09.jpg" target="_blank" rel="noreferrer"><img src="assets/case-p09.jpg" alt="研究圖卡 9"><span>SLIDE 09</span></a>
-          <a class="photo-card" href="assets/case-p10.jpg" target="_blank" rel="noreferrer"><img src="assets/case-p10.jpg" alt="研究圖卡 10"><span>SLIDE 10</span></a>
-          <a class="photo-card" href="assets/case-p11.jpg" target="_blank" rel="noreferrer"><img src="assets/case-p11.jpg" alt="研究圖卡 11"><span>SLIDE 11</span></a>
-          <a class="photo-card" href="assets/case-p12.jpg" target="_blank" rel="noreferrer"><img src="assets/case-p12.jpg" alt="研究圖卡 12"><span>SLIDE 12</span></a>
-          <a class="photo-card" href="assets/case-p13.jpg" target="_blank" rel="noreferrer"><img src="assets/case-p13.jpg" alt="研究圖卡 13"><span>SLIDE 13</span></a>
-          <a class="photo-card" href="assets/case-p14.jpg" target="_blank" rel="noreferrer"><img src="assets/case-p14.jpg" alt="研究圖卡 14"><span>SLIDE 14</span></a>
-          <a class="photo-card" href="assets/case-p15.jpg" target="_blank" rel="noreferrer"><img src="assets/case-p15.jpg" alt="研究圖卡 15"><span>SLIDE 15</span></a>
-          <a class="photo-card" href="assets/case-p16.jpg" target="_blank" rel="noreferrer"><img src="assets/case-p16.jpg" alt="研究圖卡 16"><span>SLIDE 16</span></a>
-          <a class="photo-card" href="assets/case-p17.jpg" target="_blank" rel="noreferrer"><img src="assets/case-p17.jpg" alt="研究圖卡 17"><span>SLIDE 17</span></a>
-          <a class="photo-card" href="assets/case-p18.jpg" target="_blank" rel="noreferrer"><img src="assets/case-p18.jpg" alt="研究圖卡 18"><span>SLIDE 18</span></a>
-          <a class="photo-card" href="assets/case-p19.jpg" target="_blank" rel="noreferrer"><img src="assets/case-p19.jpg" alt="研究圖卡 19"><span>SLIDE 19</span></a>
-          <a class="photo-card" href="assets/case-p20.jpg" target="_blank" rel="noreferrer"><img src="assets/case-p20.jpg" alt="研究圖卡 20"><span>SLIDE 20</span></a>
-        </div>
-      </div>
-    </section>
-
-    <section class="page closing">
       <div>
-        <div class="section-label">Clinical Boundary</div>
-        <h2>結論：不是每一顆都要相連，但不該把相連排除在外。</h2>
+        <span class="section-label gold">封面論點</span>
+        <h1 class="hed-xl">口腔是一個<br>持續變化的動態系統</h1>
+        <p class="dek">唯有建立「力學封閉單元」，才能鎖住全口咬合與下顎穩定。</p>
+        <div class="body-text">
+          <p>看診這麼多年，我常常在想，人體的口腔，其實就是一個不斷衰退的小宇宙。我們牙醫師再怎麼努力，終究是在對抗時間，對抗所謂的「熵增」。今天想和大家聊聊，為什麼在面對這個無常的系統時，我會選擇把植牙和自然牙緊緊相連。</p>
+        </div>
+        <div class="callout gold-box">
+          <p>「唯有建立力學封閉單元，才能在不斷變化的口腔宇宙中，鎖住全口咬合的穩定。」——Masky 醫師</p>
+        </div>
       </div>
-      <ul class="checks">
-        <li>牙周狀態要先穩定，否則自然牙會成為風險來源。</li>
-        <li>咬合設計要降低非軸向力，避免橋體扭矩集中。</li>
-        <li>清潔路徑要預先設計，避免鄰接區食物嵌塞與二次蛀牙。</li>
-        <li>病例選擇比口號重要，連接式修復應該是精準適應症。</li>
-      </ul>
-    </section>
-  </main>
+    </div>
+  </section>
 
-  <footer>© 2026 口腔重建觀點 · 新聞稿圖文專題頁</footer>
+  <hr class="divider">
+
+  <!-- 2. 歷史迷思 -->
+  <section id="myth" style="margin-bottom:52px;">
+    <div class="full-img">
+      <img src="img/page-02.jpg" alt="歷史的迷思">
+      <div class="caption">▲ 1965年骨整合的偉大發現，卻同時埋下了半世紀的思維枷鎖——「植牙必須獨立（freestanding）」。</div>
+    </div>
+    <div class="two-col">
+      <div>
+        <span class="section-label warn">歷史的迷思</span>
+        <h2 class="hed-lg">誰誤導了植牙界半個世紀？</h2>
+        <div class="body-text">
+          <p>故事要從一九六五年說起。那一年，骨整合的發現是個偉大的時刻。但伴隨而來的，是一個長達半世紀的執念。早期的前輩們因為恐懼，立下了一道鐵律：植牙必須獨立，絕對不能和自然牙碰在一起。這份出於保護的防禦心，卻把我們的思維，困住了好久好久。</p>
+        </div>
+      </div>
+      <div>
+        <div class="pull-quote">「為防範微動差異造成過載，這條防禦性鐵律限制了全口重建思維近 50 年。」</div>
+        <div class="callout warn-box">
+          <p>深遠影響：這條規則從未被認真重新檢視，直到廣義咬合學的出現，才讓我們開始質疑這個前提。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <!-- 3 & 4：PDL + 古典盲點 -->
+  <section style="margin-bottom:52px;">
+    <div class="alt" style="margin-bottom:48px;" id="pdl">
+      <div class="alt-img">
+        <img src="img/page-03.jpg" alt="PDL的物理差異">
+        <div class="caption">▲ 自然牙位移 50-200μm vs 植體變形 &lt;10μm——數據差距大，但臨床感受差異遠比你想的小。</div>
+      </div>
+      <div class="alt-text">
+        <span class="section-label">獨立原則的盲點</span>
+        <h2 class="hed-lg" id="pdl2">PDL的物理差異是絕對禁忌嗎？</h2>
+        <div class="body-text">
+          <p>他們害怕的是什麼呢？是牙周韌帶。植牙固定於骨頭，運動度僅為自然牙的十分之一。物理上的數據看似天差地遠。但我們似乎忘了去問問患者的感受。人體有奇妙的骨感知能力（Osseoception），適應之後，那微小的差異，對患者來說，真的沒有那麼重要。</p>
+        </div>
+        <div class="callout teal-q" style="border-left-color:var(--teal);">
+          <p>臨床實證：純植體與混合相連在患者「咀嚼滿意度」上，無顯著差異。</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="alt rev" id="blindspot">
+      <div class="alt-img">
+        <img src="img/page-04.jpg" alt="古典咬合學的偏限">
+        <div class="caption">▲ 石膏模型上的靜態宇宙——這是傳統贋復醫師最熟悉、也最危險的偏見來源。</div>
+      </div>
+      <div class="alt-text">
+        <span class="section-label">傳統的盲點</span>
+        <h2 class="hed-lg">古典咬合學的偏限</h2>
+        <div class="body-text">
+          <p>牙醫師的養成訓練，多半要我們習慣盯著桌上那冷冰冰的石膏模型與咬合器。在那個靜止的世界裡，一切都很完美。但這其實是我們最大的盲點。因為真實的口腔，是有溫度的，每一分每一秒，它都在悄悄地改變著。</p>
+        </div>
+        <div class="callout warn-box">
+          <p>致命迷思：將口腔咬合視為「恆久不變的固定位置」，習慣在單一靜態宇宙中設計假牙。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider-gold">
+
+  <!-- 5. 典範轉移 -->
+  <section id="upgrade" style="margin-bottom:52px;">
+    <div class="alt">
+      <div class="alt-img">
+        <img src="img/page-05.jpg" alt="廣義咬合學視角">
+        <div class="caption">▲ 從靜態機械結構升級為動態生物物理系統——這是思維的根本轉變。</div>
+      </div>
+      <div class="alt-text">
+        <span class="section-label gold">典範轉移</span>
+        <h2 class="hed-lg">升級為「廣義咬合學」視角</h2>
+        <div class="body-text">
+          <p>於是，我開始思考所謂的「廣義咬合學」。這不是什麼深奧的學問，只是一個簡單的覺醒：你要接受，沒有一顆牙齒會乖乖待在原地，也沒有一個下巴的位子是永遠不變的。一切都在流動。</p>
+        </div>
+        <div class="compare-table">
+          <div class="compare-col dont">
+            <div class="compare-label">✕ 古典咬合學（靜態框架）</div>
+            <p>靜態的機械結構，將牙齒視為鎖定在石膏模型上的死物。</p>
+          </div>
+          <div class="compare-col do">
+            <div class="compare-label">✓ 廣義咬合學（動態系統）</div>
+            <p>動態的生物物理系統，任何牙齒、下顎位置、肌肉狀態，隨時隨地都在變動。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <!-- 6 & 7 & 8：三維度 -->
+  <section style="margin-bottom:52px;">
+    <div style="margin-bottom:24px;">
+      <span class="section-label">三個維度的動態真相</span>
+      <h2 class="hed-lg" style="margin-top:10px;">口腔從來不是靜止的</h2>
+    </div>
+    <div class="three-col">
+      <div class="col" id="dim1">
+        <img src="img/page-06.jpg" alt="第一維度：微動的牙齒">
+        <div class="caption">▲ 第一維度：每分每秒都在微動</div>
+        <div style="padding-top:18px;">
+          <span class="section-label dark">第一維度</span>
+          <h3 class="hed-md">每分每秒都在微動的牙齒</h3>
+          <div class="body-text">
+            <p>靜下心來觀察，你會發現自然牙其實很忙碌。每次咀嚼，它都在微小地上下沉浮（25-100μm）；歲月流逝，它又會慢慢地往中間傾倒（近中漂移）、緩緩地生長。這就是生命的軌跡，它從來不是靜止的。</p>
+          </div>
+        </div>
+      </div>
+      <div class="col" id="dim2">
+        <img src="img/page-07.jpg" alt="第二維度：神經肌肉動態反饋">
+        <div class="caption">▲ 第二維度：神經肌肉的動態反饋迴路</div>
+        <div style="padding-top:18px;">
+          <span class="section-label dark">第二維度</span>
+          <h3 class="hed-md">神經肌肉與下顎位置的動態反饋</h3>
+          <div class="body-text">
+            <p>不只是牙齒，我們的神經和肌肉，也是這個交響樂團的一部分。牙齒一動，韌帶傳遞了訊號，大腦就跟著微調肌肉的力道和下巴的姿勢。牽一髮，動全身，這是一個無比精密的動態網絡。</p>
+          </div>
+        </div>
+      </div>
+      <div class="col" id="dim3">
+        <img src="img/page-08.jpg" alt="第三維度：平行宇宙效應">
+        <div class="caption">▲ 第三維度：平行宇宙效應與口腔熵增</div>
+        <div style="padding-top:18px;">
+          <span class="section-label dark">第三維度</span>
+          <h3 class="hed-md">「平行宇宙」效應與口腔熵增</h3>
+          <div class="body-text">
+            <p>有時候我會覺得，每次患者回診，只要牙齒的位置變了一點點，他們就像是走進了一個全新的平行宇宙。而整個系統，隨著年齡和磨耗，都在無可避免地走向混亂。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider-gold">
+
+</main>
+
+<!-- ═══ QUOTE SPREAD ═══ -->
+<section class="quote-spread">
+  <blockquote>
+    「在這樣一個每分每秒都在變動的宇宙裡，<br>
+    如果你硬生生地塞進一顆絕對不妥協、一動也不動的植牙，<br>
+    那就像是在湍急的河流中立了一根鐵柱——<br>
+    衝突，是遲早會發生的。」
+  </blockquote>
+  <cite>—— Masky 醫師</cite>
+</section>
+
+<main class="site-wrap">
+
+  <!-- 9 & 10：失配 + 復發 -->
+  <section style="margin:52px 0;">
+    <div class="alt" id="disaster" style="margin-bottom:48px;">
+      <div class="alt-img">
+        <img src="img/page-09.jpg" alt="獨立植牙在動態宇宙中的災難">
+        <div class="caption">▲ 力學失配（Biomechanical Mismatch）——將不變的植體放入每秒都在移動的自然牙系統，必然產生嚴重衝突。</div>
+      </div>
+      <div class="alt-text">
+        <span class="section-label warn">系統衝突</span>
+        <h2 class="hed-lg">獨立植牙在動態宇宙中的災難</h2>
+        <div class="body-text">
+          <p>在這樣一個每分每秒都在變動的宇宙裡，如果你硬生生地塞進一顆絕對不妥協、一動也不動的植牙，會發生什麼事呢？若單獨使用植牙，咬合時無法像自然牙一樣透過牙周韌帶去緩衝力道，很容易就會造成植體過載。那就像是在湍急的河流中立了一根鐵柱，衝突，是遲早會發生的。</p>
+        </div>
+        <div class="callout warn-box">
+          <p>力學失配：植牙如岩石般絕對剛性、不移動，與周圍每秒都在動的自然牙系統嚴重不相容。</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="alt rev" id="relapse">
+      <div class="alt-img">
+        <img src="img/page-10.jpg" alt="全口重建的隱形炸彈：矯正復發">
+        <div class="caption">▲ 獨立植牙無法阻擋鄰牙的位移傾向，最終導致咬合崩塌——全口重建最可怕的夢魘。</div>
+      </div>
+      <div class="alt-text">
+        <span class="section-label warn">臨床警示</span>
+        <h2 class="hed-lg">全口重建的隱形炸彈：矯正復發</h2>
+        <div class="body-text">
+          <p>尤其在那些辛苦做完全口重建和矯正的患者身上，我們最怕的，就是牙齒又偷偷跑回原來的位置。如果你只給他一顆獨立的植牙，它是攔不住那些想要移動的鄰牙的。</p>
+        </div>
+        <div class="pull-quote teal-q">「矯正的夢魘：複雜重建常伴隨矯正，拆除後自然牙有強烈傾向回到原位。」</div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <!-- 11 & 12：跑縫 -->
+  <section style="margin-bottom:52px;">
+    <div class="two-col">
+      <div id="pcl">
+        <img src="img/page-11.jpg" alt="獨立植牙的隱形殺手：跑縫現象">
+        <div class="caption">▲ 獨立植牙 10 年內發生跑縫（PCL）的機率高達 &gt;50%——這是不能忽視的數字。</div>
+        <div style="padding-top:18px;">
+          <span class="section-label warn">隱形殺手</span>
+          <h3 class="hed-md">跑縫現象的必然性</h3>
+          <div class="body-text">
+            <p>什麼是跑縫？就是近中接觸喪失（Proximal Contact Loss, PCL）。獨立植牙冠10年內發生跑縫的機率高達50%以上。而一旦跑縫，嚴重食物嵌塞、繼發性齲齒，幾乎無可避免。</p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <img src="img/page-12.jpg" alt="跑縫與高低段差的骨牌效應">
+        <div class="caption">▲ 跑縫 → 食物嵌塞 → 植體周圍炎 → 高低段差（Supraeruption）——一張骨牌倒下，全局崩潰。</div>
+        <div style="padding-top:18px;">
+          <span class="section-label warn">骨牌效應</span>
+          <h3 class="hed-md">跑縫與高低段差的連鎖反應</h3>
+          <div class="body-text">
+            <p>植體雖未脫落，但功能不協調即是全口重建的失敗。跑縫導致嚴重食物嵌塞，繼而觸發植體周圍炎；而對側牙缺少咬合對手，則造成高低段差（Supraeruption）。這是一張骨牌引發的全局崩潰。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider-gold">
+
+  <!-- 13. 力學封閉單元 -->
+  <section id="solution" style="margin-bottom:52px;">
+    <div class="alt">
+      <div class="alt-img">
+        <img src="img/page-13.jpg" alt="廣義咬合學的解方：建立力學封閉單元">
+        <div class="caption">▲ 力學封閉單元（Closed Mechanical Unit）——對抗口腔熵增的終極武器。</div>
+      </div>
+      <div class="alt-text">
+        <span class="section-label gold">核心解方</span>
+        <h2 class="hed-lg">廣義咬合學的解方：建立力學封閉單元</h2>
+        <div class="body-text">
+          <p>若植體旁邊需做假牙，將兩者「剛性相連」。在不斷變化的平行宇宙中，創造絕對穩定的結構。這樣做能徹底消滅自然牙的近中漂移，從根本阻斷跑縫與段差。</p>
+        </div>
+        <div class="callout gold-box">
+          <p>對抗熵增策略：若植體旁需做假牙，將兩者「剛性相連」，鎖定空間座標，在不斷變化的平行宇宙中，創造絕對穩定的結構。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <!-- 14 & 15：定海神針 + 加乘優勢 -->
+  <section style="margin-bottom:52px;">
+    <div class="alt rev" id="anchor" style="margin-bottom:48px;">
+      <div class="alt-img">
+        <img src="img/page-14.jpg" alt="終結位移：讓植體成為定海神針">
+        <div class="caption">▲ 植體與骨直接整合，抵抗三維空間位移能力極強——相連設計讓自然牙牢牢鎖在理想位置。</div>
+      </div>
+      <div class="alt-text">
+        <span class="section-label gold">定海神針</span>
+        <h2 class="hed-lg">終結位移：讓植體成為「定海神針」</h2>
+        <div class="body-text">
+          <p>植體具有絕對骨性鎖定，與骨直接整合，抵抗三維空間位移能力極強。相連設計能將自然牙牢牢鎖在理想位置，大幅降低Relapse（矯正復發）發生率。</p>
+        </div>
+        <div class="pull-quote">「植牙的骨整合特性，讓它天生就是最理想的空間鎖定裝置。」</div>
+      </div>
+    </div>
+
+    <div class="alt" id="advantage">
+      <div class="alt-img">
+        <img src="img/page-15.jpg" alt="相連的加乘優勢">
+        <div class="caption">▲ 借用避震器、保護植體、避免過載——相連設計讓自然牙PDL成為「應力分配器」。</div>
+      </div>
+      <div class="alt-text">
+        <span class="section-label gold">加乘優勢</span>
+        <h2 class="hed-lg">共享本體感覺與分散應力</h2>
+        <div class="body-text">
+          <p>相連設計的優勢遠不止於此。自然牙PDL成為「應力分配器」，擴大幾何底盤；兩者共享敏銳本體感覺，動態調節咬合力道；同時防止大腦無意識施加過載扭矩而破壞植體。</p>
+        </div>
+        <div class="callout">
+          <p>三重保護：① 借用避震器（PDL應力分配）② 保護植體（共享骨感知）③ 避免過載（大腦反射調控）</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <!-- 16 & 17：破解恐懼 + 剛性連結 -->
+  <section style="margin-bottom:52px;">
+    <div class="two-col">
+      <div id="intrusion">
+        <img src="img/page-16.jpg" alt="破解相連恐懼：自然牙為何會下沉">
+        <div class="caption">▲ 破解相連恐懼：自然牙下沉（Intrusion）並非相連所致，而是棘輪效應的結果。</div>
+        <div style="padding-top:18px;">
+          <span class="section-label">破解恐懼</span>
+          <h3 class="hed-md">自然牙為何會下沉（Intrusion）？</h3>
+          <div class="body-text">
+            <p>過去認為相連會導致自然牙向下沉（發生率3-5.2%）。但真相揭曉：其他非骨整合固定的自然牙的挺出與位移，所造成的相對錯覺。真正致命的是「棘輪效應（Ratchet Effect）」——使用非剛性連接器才是元兇。</p>
+          </div>
+        </div>
+      </div>
+      <div id="rigid">
+        <img src="img/page-17.jpg" alt="成功的關鍵密碼：絕對的剛性連結">
+        <div class="caption">▲ DON'T：捨棄緩衝設計、拒用NRC。DO：建立剛性連結（Rigid Connection），風險極低。</div>
+        <div style="padding-top:18px;">
+          <span class="section-label gold">成功密碼</span>
+          <h3 class="hed-md">成功的關鍵密碼：絕對的「剛性連結」</h3>
+          <div class="body-text">
+            <p>絕對不能用非剛性連接器（NRC）來模擬PDL，那是最危險的錯誤。只要固位形足夠，使用永久黏著或螺絲固定建立剛性連結，風險極低，才是正確做法。</p>
+          </div>
+          <div class="compare-table">
+            <div class="compare-col dont">
+              <div class="compare-label">✕ 拒用 NRC</div>
+              <p>避免下沉與斷裂風險</p>
+            </div>
+            <div class="compare-col do">
+              <div class="compare-label">✓ 剛性連結</div>
+              <p>永久黏著或螺絲固定，風險極低</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider-gold">
+
+  <!-- 18 & 19：數據 + 數位 -->
+  <section style="margin-bottom:52px;">
+    <div class="alt" id="data" style="margin-bottom:48px;">
+      <div class="alt-img">
+        <img src="img/page-18.jpg" alt="數據會說話：相連設計的長期臨床實證">
+        <div class="caption">▲ 5年成功率93%，10年存活率88-92%——數據遠勝傳統牙橋，邊緣骨流失（MBL）控制優異。</div>
+      </div>
+      <div class="alt-text">
+        <span class="section-label gold">臨床實證</span>
+        <h2 class="hed-lg">數據會說話：相連設計的長期臨床實證</h2>
+        <div class="body-text">
+          <p>相連設計的成功率，遠超傳統牙橋，邊緣骨流失（MBL）控制優異。5年成功率93%，10年存活率88-92%。若鄰牙需修復或防Relapse，相連是極佳選擇。</p>
+        </div>
+        <div class="callout gold-box">
+          <p>臨床決策指引：若鄰牙需修復或防Relapse，相連是極佳選擇。成功率遠勝傳統牙橋，邊緣骨流失（MBL）控制優異。</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="alt rev" id="digital">
+      <div class="alt-img">
+        <img src="img/page-19.jpg" alt="數位時代的精準加持">
+        <div class="caption">▲ CAD/CAM 被動適應設計 + T-scan 動態咬合分析——科技消除了過去相連設計在手工製作上的誤差極限。</div>
+      </div>
+      <div class="alt-text">
+        <span class="section-label">數位精準</span>
+        <h2 class="hed-lg">數位時代的精準加持</h2>
+        <div class="body-text">
+          <p>科技克服了過去相連設計在手工製作上的誤差極限。被動適應（Passive Fit）微米級精度，消除金屬預應力；T-scan動態監控相連牙橋受力，補足量化盲點。每一次咬合，都是嚴格量化的合力。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ═══ CLOSING ═══ -->
+<section class="closing" id="conclusion">
+  <img src="img/page-20.jpg" alt="總結：追求長久的動態平衡" style="max-width:900px; margin:0 auto 40px; opacity:.9; border-radius:4px;">
+  <span class="section-label gold" style="position:relative; z-index:1;">總結</span>
+  <h2 class="hed-xl" style="margin-top:12px;">追求長久的動態平衡</h2>
+  <p class="dek">
+    視角升級：擁抱動態、多維度的「廣義咬合學」。<br>
+    相連哲學：利用絕對骨鎔定，對抗生理移動與跑縫的「熵增」。<br>
+    終極目標：在全口平行宇宙中，追求功能協調、不走位的動態平衡。
+  </p>
+  <div class="callout gold-box" style="max-width:680px; margin:32px auto 0; text-align:left; position:relative; z-index:1;">
+    <p>「我關心的，從來不只是一顆植體能在嘴裡活多久，而是這個人在未來的每一天，都能好好吃一頓飯，自在地生活。」——Masky 醫師</p>
+  </div>
+</section>
+
+<!-- ═══ FOOTER ═══ -->
+<footer>
+  <p>為什麼植牙要與自然牙相連比較好？ ◆ 廣義咬合學 · 生物力學新思維 ◆ 主講：Masky 醫師 ◆ Edited by Masky Wang</p>
+</footer>
+
 </body>
 </html>
