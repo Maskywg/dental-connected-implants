@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>為什麼我主張植牙要與自然牙相連比較好？</title>
+  <meta name="description" content="以 3D 動畫與研究圖卡說明植牙與自然牙相連的咬合、生理與臨床邏輯。">
+  <meta property="og:title" content="為什麼我主張植牙要與自然牙相連比較好？">
+  <meta property="og:description" content="植體的剛性支撐，配合自然牙的牙周韌帶與本體感覺，重新思考混合修復設計。">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/case-p01.jpg">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%23061418'/%3E%3Cpath d='M13 34h38' stroke='%2309c2b0' stroke-width='7' stroke-linecap='round'/%3E%3Ccircle cx='18' cy='34' r='10' fill='%23f6f3df'/%3E%3Cpath d='M46 19v30' stroke='%239fb5c3' stroke-width='8' stroke-linecap='round'/%3E%3Ccircle cx='46' cy='28' r='10' fill='%23f6f3df'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@600;700;900&family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --ink: #071219;
+      --deep: #0b1f26;
+      --teal: #09c2b0;
+      --mint: #d7fff7;
+      --coral: #ff685f;
+      --amber: #f6c45f;
+      --blue: #5fa8ff;
+      --paper: #f6f5ef;
+      --line: rgba(7, 18, 25, .14);
+      --glass: rgba(255, 255, 255, .72);
+      --shadow: 0 24px 60px rgba(7, 18, 25, .18);
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background:
+        linear-gradient(180deg, #041016 0%, #0b2027 44rem, var(--paper) 44rem),
+        var(--paper);
+      font-family: "Noto Sans TC", system-ui, sans-serif;
+    }
+
+    body::selection {
+      color: #021014;
+      background: var(--mint);
+    }
+
+    a { color: inherit; }
+
+    .hero {
+      min-height: 92vh;
+      position: relative;
+      overflow: hidden;
+      display: grid;
+      align-items: center;
+      padding: 24px clamp(18px, 5vw, 72px) 54px;
+      color: #f7fffc;
+      isolation: isolate;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(circle at 18% 20%, rgba(9, 194, 176, .24), transparent 26%),
+        radial-gradient(circle at 84% 30%, rgba(255, 104, 95, .18), transparent 28%),
+        linear-gradient(120deg, rgba(4, 16, 22, .98), rgba(4, 16, 22, .56) 46%, rgba(4, 16, 22, .82));
+      z-index: -2;
+    }
+
+    .hero-grid {
+      width: min(1280px, 100%);
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: minmax(0, .92fr) minmax(420px, 1.08fr);
+      gap: clamp(22px, 4vw, 54px);
+      align-items: center;
+    }
+
+    .brandline {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      margin-bottom: clamp(18px, 3vw, 32px);
+      color: rgba(247, 255, 252, .74);
+      font-size: 13px;
+      font-weight: 900;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    .brandline::before {
+      content: "";
+      width: 42px;
+      height: 2px;
+      background: linear-gradient(90deg, var(--teal), var(--coral));
+    }
+
+    h1 {
+      margin: 0;
+      font-family: "Noto Serif TC", serif;
+      font-weight: 900;
+      font-size: clamp(42px, 6.8vw, 96px);
+      line-height: 1.05;
+      letter-spacing: 0;
+      max-width: 780px;
+    }
+
+    .lead {
+      max-width: 700px;
+      margin: 24px 0 0;
+      color: rgba(247, 255, 252, .82);
+      font-size: clamp(17px, 2vw, 22px);
+      line-height: 1.9;
+      font-weight: 500;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 32px;
+    }
+
+    .btn {
+      min-height: 46px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid rgba(255, 255, 255, .22);
+      border-radius: 8px;
+      padding: 12px 18px;
+      color: #f7fffc;
+      background: rgba(255, 255, 255, .08);
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 900;
+      backdrop-filter: blur(16px);
+    }
+
+    .btn.primary {
+      color: #021014;
+      background: linear-gradient(135deg, var(--teal), #9af7e8);
+      border-color: transparent;
+    }
+
+    .visual-wrap {
+      position: relative;
+      min-height: min(72vh, 720px);
+      border: 1px solid rgba(255, 255, 255, .14);
+      border-radius: 8px;
+      overflow: hidden;
+      background: rgba(255, 255, 255, .035);
+      box-shadow: 0 34px 90px rgba(0, 0, 0, .38);
+    }
+
+    #implantScene {
+      width: 100%;
+      height: 100%;
+      min-height: min(72vh, 720px);
+      display: block;
+    }
+
+    .scene-label {
+      position: absolute;
+      left: 18px;
+      bottom: 18px;
+      right: 18px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 8px;
+      pointer-events: none;
+    }
+
+    .scene-label span {
+      border: 1px solid rgba(255, 255, 255, .14);
+      border-radius: 8px;
+      padding: 10px 12px;
+      color: rgba(247, 255, 252, .78);
+      background: rgba(2, 16, 20, .62);
+      backdrop-filter: blur(14px);
+      font-size: 12px;
+      font-weight: 900;
+      line-height: 1.4;
+    }
+
+    main {
+      background: var(--paper);
+      overflow: hidden;
+    }
+
+    .section {
+      width: min(1180px, calc(100% - 36px));
+      margin: 0 auto;
+      padding: clamp(58px, 8vw, 104px) 0;
+    }
+
+    .section.tight { padding-top: 36px; }
+
+    .eyebrow {
+      color: #54706c;
+      font-size: 12px;
+      font-weight: 900;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 14px;
+    }
+
+    h2 {
+      margin: 0;
+      font-family: "Noto Serif TC", serif;
+      font-size: clamp(30px, 4.5vw, 58px);
+      line-height: 1.18;
+      letter-spacing: 0;
+    }
+
+    .intro-grid {
+      display: grid;
+      grid-template-columns: .9fr 1.1fr;
+      gap: clamp(24px, 5vw, 70px);
+      align-items: start;
+    }
+
+    .copy {
+      margin: 0;
+      color: #334441;
+      font-size: 17px;
+      line-height: 2.05;
+    }
+
+    .thesis {
+      display: grid;
+      gap: 14px;
+    }
+
+    .thesis-card {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: rgba(255, 255, 255, .64);
+      padding: 20px;
+      box-shadow: 0 14px 36px rgba(7, 18, 25, .08);
+    }
+
+    .thesis-card b {
+      display: block;
+      margin-bottom: 8px;
+      font-size: 18px;
+    }
+
+    .thesis-card p {
+      margin: 0;
+      color: #4b5c59;
+      line-height: 1.85;
+      font-size: 15px;
+    }
+
+    .full-bleed {
+      width: 100%;
+      background:
+        linear-gradient(135deg, rgba(9, 194, 176, .09), rgba(255, 104, 95, .08)),
+        #ffffff;
+      border-block: 1px solid rgba(7, 18, 25, .08);
+    }
+
+    .story-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+      margin-top: 28px;
+    }
+
+    .story-card {
+      min-height: 260px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      border: 1px solid rgba(7, 18, 25, .1);
+      border-radius: 8px;
+      padding: 24px;
+      background: var(--glass);
+      box-shadow: 0 18px 48px rgba(7, 18, 25, .09);
+    }
+
+    .story-card .num {
+      color: var(--coral);
+      font-family: "Noto Serif TC", serif;
+      font-size: 42px;
+      font-weight: 900;
+      line-height: 1;
+    }
+
+    .story-card h3 {
+      margin: 22px 0 10px;
+      font-size: 22px;
+      line-height: 1.35;
+    }
+
+    .story-card p {
+      margin: 0;
+      color: #4b5c59;
+      line-height: 1.8;
+    }
+
+    .evidence {
+      display: grid;
+      grid-template-columns: .86fr 1.14fr;
+      gap: 28px;
+      align-items: start;
+    }
+
+    .feature-image {
+      position: sticky;
+      top: 24px;
+      border-radius: 8px;
+      overflow: hidden;
+      border: 1px solid rgba(7, 18, 25, .1);
+      background: #fff;
+      box-shadow: var(--shadow);
+    }
+
+    .feature-image img {
+      width: 100%;
+      display: block;
+    }
+
+    .timeline {
+      display: grid;
+      gap: 16px;
+    }
+
+    .step {
+      display: grid;
+      grid-template-columns: 44px 1fr;
+      gap: 16px;
+      align-items: start;
+    }
+
+    .dot {
+      width: 44px;
+      height: 44px;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      color: #021014;
+      background: var(--amber);
+      font-weight: 900;
+    }
+
+    .step-content {
+      border-bottom: 1px solid rgba(7, 18, 25, .12);
+      padding-bottom: 18px;
+    }
+
+    .step-content h3 {
+      margin: 0 0 8px;
+      font-size: 20px;
+    }
+
+    .step-content p {
+      margin: 0;
+      color: #4b5c59;
+      line-height: 1.85;
+    }
+
+    .gallery-head {
+      display: flex;
+      justify-content: space-between;
+      gap: 18px;
+      align-items: end;
+      margin-bottom: 24px;
+    }
+
+    .gallery-head p {
+      max-width: 460px;
+      margin: 0;
+      color: #4b5c59;
+      line-height: 1.75;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 14px;
+    }
+
+    .slide-card {
+      border: 1px solid rgba(7, 18, 25, .1);
+      border-radius: 8px;
+      overflow: hidden;
+      background: #fff;
+      box-shadow: 0 12px 30px rgba(7, 18, 25, .08);
+      transform: translateY(0);
+      transition: transform .2s ease, box-shadow .2s ease;
+    }
+
+    .slide-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 22px 46px rgba(7, 18, 25, .14);
+    }
+
+    .slide-card img {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      display: block;
+      object-fit: cover;
+      background: #eef2ef;
+    }
+
+    .slide-card span {
+      display: block;
+      padding: 10px 12px;
+      color: #536561;
+      font-size: 12px;
+      font-weight: 900;
+      letter-spacing: 1px;
+    }
+
+    .quote-band {
+      color: #f7fffc;
+      background: #061418;
+    }
+
+    .quote {
+      width: min(1120px, calc(100% - 36px));
+      margin: 0 auto;
+      padding: clamp(58px, 8vw, 100px) 0;
+      display: grid;
+      grid-template-columns: 1fr .72fr;
+      gap: 42px;
+      align-items: center;
+    }
+
+    blockquote {
+      margin: 0;
+      font-family: "Noto Serif TC", serif;
+      font-size: clamp(28px, 4vw, 54px);
+      line-height: 1.4;
+      font-weight: 900;
+    }
+
+    .quote p {
+      margin: 0;
+      color: rgba(247, 255, 252, .72);
+      line-height: 2;
+      font-size: 16px;
+    }
+
+    .closing {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+      align-items: center;
+    }
+
+    .closing-panel {
+      border-radius: 8px;
+      padding: clamp(24px, 4vw, 40px);
+      background: #fff;
+      border: 1px solid rgba(7, 18, 25, .1);
+      box-shadow: var(--shadow);
+    }
+
+    .closing-panel p {
+      margin: 14px 0 0;
+      color: #4b5c59;
+      line-height: 1.9;
+    }
+
+    .checks {
+      display: grid;
+      gap: 12px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .checks li {
+      border-left: 4px solid var(--teal);
+      padding: 12px 0 12px 16px;
+      color: #344642;
+      line-height: 1.7;
+      background: rgba(255, 255, 255, .46);
+    }
+
+    footer {
+      padding: 34px 18px 42px;
+      color: rgba(247, 255, 252, .65);
+      background: #061418;
+      text-align: center;
+      font-size: 13px;
+    }
+
+    @media (max-width: 980px) {
+      .hero { min-height: auto; }
+      .hero-grid,
+      .intro-grid,
+      .evidence,
+      .quote,
+      .closing {
+        grid-template-columns: 1fr;
+      }
+
+      .visual-wrap,
+      #implantScene {
+        min-height: 520px;
+      }
+
+      .story-grid,
+      .gallery {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .feature-image { position: static; }
+    }
+
+    @media (max-width: 620px) {
+      .hero {
+        padding-inline: 16px;
+        padding-top: 18px;
+      }
+
+      .hero-actions,
+      .gallery-head {
+        align-items: stretch;
+        flex-direction: column;
+      }
+
+      .btn { width: 100%; }
+
+      .visual-wrap,
+      #implantScene {
+        min-height: 430px;
+      }
+
+      .scene-label { grid-template-columns: 1fr; }
+
+      .section {
+        width: min(100% - 24px, 1180px);
+        padding-block: 54px;
+      }
+
+      .story-grid,
+      .gallery {
+        grid-template-columns: 1fr;
+      }
+
+      .story-card { min-height: 220px; }
+
+      .step { grid-template-columns: 36px 1fr; }
+      .dot { width: 36px; height: 36px; }
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-grid">
+      <div>
+        <div class="brandline">Connected Implant Manifesto</div>
+        <h1>為什麼我主張植牙要與自然牙相連比較好？</h1>
+        <p class="lead">植牙不是孤立的金屬支柱。當鄰近自然牙也需要固定假牙時，讓植體與自然牙進入同一個受力系統，可能更接近口腔真正的動態生理。</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#argument">閱讀核心論點</a>
+          <a class="btn" href="#slides">查看研究圖卡</a>
+        </div>
+      </div>
+      <div class="visual-wrap" aria-label="3D 植體與自然牙連接動畫">
+        <canvas id="implantScene"></canvas>
+        <div class="scene-label">
+          <span>自然牙：牙周韌帶與感覺回饋</span>
+          <span>連接橋體：分散咬合力量</span>
+          <span>植體：骨整合與剛性支撐</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section intro-grid" id="argument">
+      <div>
+        <div class="eyebrow">Narrative</div>
+        <h2>不是「植體歸植體」那麼簡單。</h2>
+      </div>
+      <div class="thesis">
+        <p class="copy">傳統植牙觀念常強調植體不要與自然牙相連，理由是兩者動度不同。但在全口重建與多顆固定修復的情境裡，自然牙的位置、角度與對咬關係會隨時間改變；植體本身卻幾乎不會移動。若完全切開處理，長期反而可能產生牙縫、咬合落差與維修負擔。</p>
+        <div class="thesis-card">
+          <b>核心主張</b>
+          <p>當植體旁邊的自然牙本來就需要做固定假牙時，連接式設計不只是省植體，而是讓自然牙的生理回饋、微動與植體的穩定支撐互相補位。</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="full-bleed">
+      <div class="section">
+        <div class="eyebrow">Three Clinical Angles</div>
+        <h2>相連設計的三個臨床邏輯</h2>
+        <div class="story-grid">
+          <article class="story-card">
+            <div>
+              <div class="num">01</div>
+              <h3>咬合不是靜態模型</h3>
+              <p>自然牙會受牙周韌帶、咬合力與時間影響產生微幅位置變化；植體骨整合後幾乎固定。兩者完全分離，長期咬合關係可能越跑越不一致。</p>
+            </div>
+          </article>
+          <article class="story-card">
+            <div>
+              <div class="num">02</div>
+              <h3>自然牙提供本體感覺</h3>
+              <p>自然牙能感知咬合力道與位置，這是植體缺乏的回饋機制。連接後，橋體不是只靠剛性支撐，也能借用自然牙的感覺與緩衝。</p>
+            </div>
+          </article>
+          <article class="story-card">
+            <div>
+              <div class="num">03</div>
+              <h3>重建要看整體系統</h3>
+              <p>如果鄰牙本來就需要牙冠或牙橋，混合支持設計能減少手術侵入、降低植體數量，並讓補綴物以整體受力單位被管理。</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section evidence">
+      <div class="feature-image">
+        <img src="assets/narration-p01.jpg" alt="植牙與自然牙相連論點整理圖">
+      </div>
+      <div>
+        <div class="eyebrow">Clinical Storyline</div>
+        <h2>從反對連接，到重新評估連接。</h2>
+        <div class="timeline">
+          <div class="step">
+            <div class="dot">1</div>
+            <div class="step-content">
+              <h3>早期原則：避免不同動度互相牽扯</h3>
+              <p>過去的教科書式建議，擔心自然牙與植體動度不同，使植體承受不利力矩，因此傾向讓植體獨立負擔。</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="dot">2</div>
+            <div class="step-content">
+              <h3>現代問題：口腔本身會變</h3>
+              <p>臨床追蹤看到的不是靜止齒列。自然牙漂移、對咬牙變化、鄰接喪失與食物嵌塞，都會讓獨立植體修復暴露新的維修問題。</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="dot">3</div>
+            <div class="step-content">
+              <h3>再思考：連接不等於粗暴相接</h3>
+              <p>連接式修復需要咬合設計、支台條件、牙周控制與清潔策略。它不是每一案都適合，而是特定條件下值得被重新放回治療選項。</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="dot">4</div>
+            <div class="step-content">
+              <h3>結論：適應症比禁忌更重要</h3>
+              <p>若自然牙健康、牙周穩定、補綴需求明確，植牙與自然牙相連可以被視為一種系統性修復策略，而非過時妥協。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="quote-band">
+      <div class="quote">
+        <blockquote>植體提供穩定，自然牙提供感覺；真正要重建的，是整個咬合系統。</blockquote>
+        <p>這個頁面不是把連接式設計包裝成萬能解法，而是把臨床判斷拉回更完整的問題：患者缺的不是單一牙根，而是可長期維持、可感知、可清潔、可調整的功能單位。</p>
+      </div>
+    </section>
+
+    <section class="section" id="slides">
+      <div class="gallery-head">
+        <div>
+          <div class="eyebrow">Publication Assets</div>
+          <h2>研究圖卡素材</h2>
+        </div>
+        <p>以下圖片由你提供的 PDF 擷取，保留給文章刊登時使用。第一張作為主論點圖，後續圖卡可搭配段落或社群輪播。</p>
+      </div>
+      <div class="gallery">
+        <a class="slide-card" href="assets/case-p01.jpg" target="_blank" rel="noreferrer"><img src="assets/case-p01.jpg" alt="研究圖卡 1"><span>SLIDE 01</span></a>
+        <a class="slide-card" href="assets/case-p02.jpg" target="_blank" rel="noreferrer"><img src="assets/case-p02.jpg" alt="研究圖卡 2"><span>SLIDE 02</span></a>
+        <a class="slide-card" href="assets/case-p03.jpg" target="_blank" rel="noreferrer"><img src="assets/case-p03.jpg" alt="研究圖卡 3"><span>SLIDE 03</span></a>
+        <a class="slide-card" href="assets/case-p04.jpg" target="_blank" rel="noreferrer"><img src="assets/case-p04.jpg" alt="研究圖卡 4"><span>SLIDE 04</span></a>
+        <a class="slide-card" href="assets/case-p05.jpg" target="_blank" rel="noreferrer"><img src="assets/case-p05.jpg" alt="研究圖卡 5"><span>SLIDE 05</span></a>
+        <a class="slide-card" href="assets/case-p06.jpg" target="_blank" rel="noreferrer"><img src="assets/case-p06.jpg" alt="研究圖卡 6"><span>SLIDE 06</span></a>
+        <a class="slide-card" href="assets/case-p07.jpg" target="_blank" rel="noreferrer"><img src="assets/case-p07.jpg" alt="研究圖卡 7"><span>SLIDE 07</span></a>
+        <a class="slide-card" href="assets/case-p08.jpg" target="_blank" rel="noreferrer"><img src="assets/case-p08.jpg" alt="研究圖卡 8"><span>SLIDE 08</span></a>
+      </div>
+    </section>
+
+    <section class="section tight closing">
+      <div class="closing-panel">
+        <div class="eyebrow">Clinical Boundary</div>
+        <h2>不是每一顆都要相連。</h2>
+        <p>若鄰牙完整、不需要固定假牙，植體獨立修復仍然合理。真正需要討論的是：當自然牙本來就需要被納入固定修復時，是否應該把植體與自然牙視為同一個受力與感覺系統。</p>
+      </div>
+      <ul class="checks">
+        <li>牙周狀態要先穩定，否則自然牙會成為風險來源。</li>
+        <li>咬合設計要降低非軸向力，避免橋體扭矩集中。</li>
+        <li>清潔路徑要預先設計，避免鄰接區食物嵌塞與二次蛀牙。</li>
+        <li>病例選擇比口號重要，連接式修復應該是精準適應症。</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>© 2026 Connected Implant Feature Page · Designed for publication</footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
+  <script>
+    const canvas = document.getElementById("implantScene");
+    const scene = new THREE.Scene();
+    scene.fog = new THREE.Fog(0x041016, 8, 23);
+
+    const camera = new THREE.PerspectiveCamera(42, 1, 0.1, 100);
+    camera.position.set(0, 3.5, 11);
+
+    const renderer = new THREE.WebGLRenderer({ canvas, antialias: true, alpha: true, preserveDrawingBuffer: true });
+    renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+    renderer.outputColorSpace = THREE.SRGBColorSpace;
+
+    const group = new THREE.Group();
+    scene.add(group);
+
+    const ambient = new THREE.AmbientLight(0x9ffcf0, 1.9);
+    scene.add(ambient);
+
+    const key = new THREE.DirectionalLight(0xffffff, 3.4);
+    key.position.set(4, 8, 7);
+    scene.add(key);
+
+    const coralLight = new THREE.PointLight(0xff685f, 2.4, 15);
+    coralLight.position.set(-5, 2.5, 4);
+    scene.add(coralLight);
+
+    const tealLight = new THREE.PointLight(0x09c2b0, 3, 16);
+    tealLight.position.set(5, 1.5, 5);
+    scene.add(tealLight);
+
+    const enamel = new THREE.MeshPhysicalMaterial({
+      color: 0xf6f3df,
+      roughness: .36,
+      metalness: 0,
+      transmission: .08,
+      thickness: .8
+    });
+    const rootMat = new THREE.MeshStandardMaterial({ color: 0xd8b074, roughness: .58 });
+    const titanium = new THREE.MeshStandardMaterial({ color: 0x9fb5c3, roughness: .22, metalness: .82 });
+    const bridgeMat = new THREE.MeshStandardMaterial({ color: 0x09c2b0, roughness: .26, metalness: .18 });
+    const nerveMat = new THREE.MeshStandardMaterial({ color: 0xff685f, roughness: .32, emissive: 0x5e1411, emissiveIntensity: .35 });
+    const boneMat = new THREE.MeshStandardMaterial({ color: 0xefcf9d, roughness: .74 });
+
+    function makeTooth(x) {
+      const holder = new THREE.Group();
+      holder.position.x = x;
+      const crown = new THREE.Mesh(new THREE.SphereGeometry(1.05, 48, 32), enamel);
+      crown.scale.set(.92, 1.08, .78);
+      crown.position.y = 1.65;
+      holder.add(crown);
+
+      const cusp = new THREE.Mesh(new THREE.ConeGeometry(.54, .7, 36), enamel);
+      cusp.position.set(-.28, 2.45, .08);
+      cusp.rotation.z = .18;
+      holder.add(cusp);
+
+      const cusp2 = cusp.clone();
+      cusp2.position.x = .32;
+      cusp2.rotation.z = -.16;
+      holder.add(cusp2);
+
+      const root = new THREE.Mesh(new THREE.ConeGeometry(.48, 2.7, 42), rootMat);
+      root.position.y = -.2;
+      root.rotation.z = .05;
+      holder.add(root);
+
+      const ligament = new THREE.Mesh(new THREE.TorusGeometry(.62, .035, 12, 72), nerveMat);
+      ligament.position.y = .5;
+      ligament.rotation.x = Math.PI / 2;
+      holder.add(ligament);
+      return holder;
+    }
+
+    function makeImplant(x) {
+      const holder = new THREE.Group();
+      holder.position.x = x;
+      const crown = new THREE.Mesh(new THREE.SphereGeometry(1.0, 48, 32), enamel);
+      crown.scale.set(.92, 1.05, .78);
+      crown.position.y = 1.65;
+      holder.add(crown);
+
+      const screw = new THREE.Mesh(new THREE.CylinderGeometry(.36, .45, 2.7, 56), titanium);
+      screw.position.y = -.3;
+      holder.add(screw);
+
+      for (let i = 0; i < 9; i++) {
+        const ring = new THREE.Mesh(new THREE.TorusGeometry(.46, .035, 12, 72), titanium);
+        ring.position.y = .78 - i * .25;
+        ring.rotation.x = Math.PI / 2;
+        holder.add(ring);
+      }
+
+      const abutment = new THREE.Mesh(new THREE.CylinderGeometry(.34, .42, .54, 48), titanium);
+      abutment.position.y = .96;
+      holder.add(abutment);
+      return holder;
+    }
+
+    const tooth = makeTooth(-2.05);
+    const implant = makeImplant(2.05);
+    group.add(tooth, implant);
+
+    const bridge = new THREE.Mesh(new THREE.CapsuleGeometry(.22, 3.32, 16, 42), bridgeMat);
+    bridge.position.set(0, 1.68, 0);
+    bridge.rotation.z = Math.PI / 2;
+    group.add(bridge);
+
+    const forceMat = new THREE.MeshBasicMaterial({ color: 0xf6c45f, transparent: true, opacity: .85 });
+    const force = new THREE.Group();
+    for (let i = 0; i < 9; i++) {
+      const arc = new THREE.Mesh(new THREE.TorusGeometry(1.8 + i * .22, .012, 8, 96, Math.PI * .9), forceMat);
+      arc.position.set(0, 1.7, 0);
+      arc.rotation.set(Math.PI / 2, 0, .2 + i * .08);
+      force.add(arc);
+    }
+    group.add(force);
+
+    const bone = new THREE.Mesh(new THREE.BoxGeometry(6.4, .55, 2.4), boneMat);
+    bone.position.y = -1.72;
+    group.add(bone);
+
+    const grid = new THREE.GridHelper(14, 24, 0x09c2b0, 0x153a40);
+    grid.position.y = -2.04;
+    scene.add(grid);
+
+    const particles = new THREE.BufferGeometry();
+    const positions = [];
+    for (let i = 0; i < 260; i++) {
+      positions.push((Math.random() - .5) * 13, Math.random() * 7 - 2.2, (Math.random() - .5) * 8);
+    }
+    particles.setAttribute("position", new THREE.Float32BufferAttribute(positions, 3));
+    const particleMesh = new THREE.Points(
+      particles,
+      new THREE.PointsMaterial({ color: 0x9af7e8, size: .035, transparent: true, opacity: .7 })
+    );
+    scene.add(particleMesh);
+
+    function resize() {
+      const rect = canvas.getBoundingClientRect();
+      renderer.setSize(rect.width, rect.height, false);
+      camera.aspect = rect.width / rect.height;
+      camera.updateProjectionMatrix();
+    }
+    window.addEventListener("resize", resize);
+    resize();
+
+    function animate(now) {
+      const t = now * .001;
+      group.rotation.y = Math.sin(t * .45) * .26;
+      group.rotation.x = Math.sin(t * .32) * .06;
+      tooth.position.y = Math.sin(t * 2.1) * .035;
+      implant.position.y = Math.sin(t * 2.1 + .5) * .012;
+      bridge.scale.x = 1 + Math.sin(t * 2.1) * .025;
+      force.rotation.z = t * .28;
+      force.materialNeedsUpdate = true;
+      particleMesh.rotation.y = t * .045;
+      renderer.render(scene, camera);
+      requestAnimationFrame(animate);
+    }
+    requestAnimationFrame(animate);
+  </script>
+</body>
+</html>
